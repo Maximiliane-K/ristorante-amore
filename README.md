@@ -1,110 +1,376 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Ristorante AMORE
 
-Welcome USER_NAME,
+## Code Institute Portfolio Project 4
+![Image showing the Ristorante AMORE website on various devices]
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+View the deployed site: [Ristorante AMORE]
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Ristorante AMORE is the imagined restaurant’s website showcasing all the pieces of information a guest would need before visiting. The website will enable the user, the imagined guest, to browse through the menu, look up the contact information, and book a table online. 
 
-## Gitpod Reminders
+It will also feature an administrative area allowing the restaurant owner to see the list of bookings and manage the content on his homepage. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Python, Javascript, HTML and CSS will be the languages used to create this website.
 
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
+## **Table Of Contents**
+* [User Experience](#user-experience)
+  * [Strategy Plane](#strategy-plane)
+    * [Project Goals](#project-goals)
+    * [User Stories](#user-stories)
+  * [Scope Plane](#scope-plane)
+  * [Structure Plane](#structure-plane)
+    * [Database Shema](#database-shema)
+  * [Skeleton Plane](#skeleton-plane)
+    * [Wireframes](#wireframes)
+  * [Surface Plane](#surface-plane)
+    * [Color Sheme](#color-sheme)
+    * [Typography](#typography)
+  * [Features](#features)
+    * [Navigation](#navigation)
+    * [Homepage](#homepage)
+    * [Food Menu](#food-menu)
+    * [Drinks Menu](#drinks-menu)
+    * [Contact](#contact)
+    * [Login Form](#login-form)
+    * [Sign Up Form](#sign-up-form)
+    * [Booking Form](#booking-form)
+    * [Bookings Overview](#bookings-overview)
+    * [Logout](#logout)
+    * [Footer](#footer)
+    * [Admin Features](#admin-features)
+  * [Future Features](#future-features)
+  * [Technologies](#technologies)
+    * [Languages](#languages)
+    * [Third Party Technologies](#third-party-technologies)
+  * [Testing](#testing)
+  * [Deployment](#deployment)
+    * [Deploying To Heroku](#deploying-to-heroku)
+  * [Forking The Repository](#forking-the-repository)
+  * [Cloning The Repository](#cloning-the-repository)
+  * [Credits](#credits)
+    * [Media](#media)
+    * [Content](#content)
+      
 ---
 
-Happy coding!
+## User Experience
+
+### Strategy Plane
+
+#### **Project Goals**
+
+Ristorante AMORE is a restaurant website. 
+
+The site’s primary users will be guests who want to visit the restaurant. Ristorante AMORE aims to give future guests a look into the current menu, directions to the restaurant, contact possibilities, and a simple reservation tool that allows the user to book a table, view their booking, and in case edit or delete their reservation. 
+
+For the restaurant owner, there will be an administrative area that allows the manager/ site administrator to update the menu and homepage content as well as viewing the reservations made by users/ guests. 
+
+#### **User Stories**
+
+The User Stories were created and categorized using the prioritization technique of the MoSCoW method. 
+
+| | As a / an | I want to be able to… | So that I can…  |
+|----|----|----|----|
+| Navigation and Viewing        |   |   |   |
+| 1  | Site Visitor | Easily navigate the site                  | Find the information I require                                      |
+| 2  | Site Visitor | View the restaurant's menus               | Get an overview of the food and drink items that are available      |
+| 3  | Site Visitor | View the location and contact details     | Find and contact the restaurant                                     |
+| 4  | Site Visitor | View the opening hours                    | See when the restaurant is open                                     |                                                   
+| Reservations and Registration |   |   |   |
+| 5  | Site Visitor | Easily register for an account            | Book a table online                                                 |
+| 6  | Site Visitor | Easily log in                             | Book a table online and manage my bookings                          |
+| 7  | Site Visitor | Easily log out                            | So that no one can change my booking and keep it safe               |
+| C R U D Functionality         |   |   |   |
+| 8  | Site Visitor | Create a online table reservation         | Secure a table for a specific date, time and group size             |
+| 9  | Site Visitor | Read/ View my booking(s)                  | See that the reservation was successful and use as reminder         |
+| 10 | Site Visitor | Update my booking(s)                      | Make necesary changes  to my reservation                            |
+| 11 | Site Visitor | Delete/ cancel my booking(s)              | Have the reservation removed from the restaurant's system           |
+| Site Administration           |   |   |   |
+| 12 | Site Owner | Add items to the menu                       | Add new and seasonal food and drinks                                |
+| 13 | Site Owner | Edit a menu item                            | Update/ change the price or category of a menu item                 |
+| 14 | Site Owner | Delete a menu item                          | Remove food and drink items that aren't available                   |
+| 15 | Site Owner | Manage the opening dates and hours          | Prevent bookings to be made on days the restaurant is closed        |
+| 16 | Site Owner | View the bookings that are made             | Prepare the required table(s)                                       |
+
+### Scope Plane 
+
+The following user requirements and expectations were used to plan the Scope of the project.
+
+* A Navigationbar that is simple and intuitive
+* Responsive design that is visually appealing on all screen sizes
+* A short introduction to the site and its purpose
+  
+* Basic information about the restaurant:
+  * Contact details and directions
+  * Menu
+    
+* Authentication:
+  * Registration/ Sign in feature
+  * Log in/out feature
+    
+* CRUD functionality for logged in users:
+  * Creata/ make bookings
+  * Read/ view bookings
+  * Update/ adjust bookings
+  * Delete/ cancel bookings
+    
+* CRUD functionality for site admin:
+  * View bookings
+  * Update menus and page contect
+
+### Structure Plane
+
+#### **Database Shema**
+
+### Skeleton Plane
+
+#### **Wireframes**
+
+I created my wireframes using Figma. During production I added further features that aren't displayed in the wireframes. 
+These were created to give guidance when coming to the design. 
+
+*[Home]
+*[Food Menu]
+*[Drinks Menu]
+*[Contact]
+*[Table Booking]
+
+### Surface Plane
+
+#### **Color Sheme**
+
+I wanted my color palatte to reflect the mood of an romantic restaurant in Italy. 
+With the name of the restaurant being AMORE it was clear to me that red and pink elements should be used. 
+For the darker shades I chose a dark green, that should be reminiscent of basil and the green in the italian flag, and a dark blue that shall depict an not too dark evening sky. 
+
+#### **Typography**
+
+## Features
+
+### **Homepage**
+
+### **Food Menu**
+
+### **Drinks Menu**
+
+### **Contact**
+
+### **Login Form**
+
+### **Sign Up Form**
+
+### **Booking Form**
+
+### **Bookings Overview**
+
+### **Logout**
+
+### **Footer**
+
+## **Admin Features**
+
+## **Future Features**
+
+## **Technologies**
+
+### **Languages**
+* HTML 
+* CSS
+* JavaScript
+* Python
+
+### **Third Party Technologies**
+* Django - used as Python framework for the project
+* Gunicorn - Python HTTP server for WSGI applications
+* Python Moduls
+  * asgiref==3.7.2
+  * cloudinary==1.39.0
+  * dj-database-url==0.5.0
+  * dj3-cloudinary-storage==0.0.6
+  * Django==3.2.24
+  * gunicorn==21.2.0
+  * psycopg2==2.9.9
+  * pytz==2024.1
+  * sqlparse==0.4.4
+  * urllib3==1.26.15
+* Heroku - used as cloud-based platform for deploying the project
+* ElephantSQL - databse hosting service
+* Cloudinary - cloud platform for storing static files
+* Git - used for version control
+* GitPod - IDE used for creating the project
+* GitHub - used for storing project files
+* Bootstrap - used for styling and responsivness
+* Google Fonts - import of fonts to use in project
+* Font Awesome - import of icons to use in project
+* Figma - used to create the wireframes of the project
+* Favicon - used for creating the favicon for the project
+* Am I Responsive - used for multi device mockup
+* DBDiagram - used for creating the database sheme
+* Coolers - used to create color sheme
+
+  
+## **Testing**
+
+## **Deployment**
+
+### **Deploying To Heroku**
+The project was deployed to Heroku and was set to automatically update when pushed to GitHub. 
+
+The project is currently hosted on Heroku. 
+
+1. Create new external database on [ElephantSQL](#https://www.elephantsql.com/)
+   * Login in to your ElephantSQL account (if you don't have an account create one)
+   * Click "Create New instance" 
+   * Enter a "Name to describe yout instance" for your database and select the "Tiny Turtle (free)" plan
+   * Proceed to click "Select Region" 
+   * Select a region and continue by clicking on "Review"
+   * Check the information and then click on "Create instance"
+   * Return to dashboard and select your created new instance
+   * Copy the URL that can be found in the URL section so it can be added to your Heroku App in a few steps
+
+<!-- The following content was taken from the Django Blog Cheat Sheet of CodeInstitute -->
+2. Attach the Database
+   * In the IDE file explorer or terminal create a new **env.py** file on top level directory
+    * In the **env.py** file enter: 
+      ``` python
+      import os
+      ```
+      
+    * Set environment variables:
+      ``` python
+      os.environ["DATABASE_URL"] = "Paste in ElephantSQL URL"
+      ```
+      
+    * Add secret key:
+      ``` python
+      os.environ["SECRET_KEY"] = "Enter your own uniqueSecretKey"
+      ```
+      
+3. Preparation of environment and **settings.py** file
+   * In **settings.py** under "from pathlib import Path" add:
+     ``` python
+     import os
+     import dj_database_url
+     
+     if os.path.isfile('env.py'):
+       import env
+     ```
+
+   * In **settings.py** replace SECRET_KEY instance:
+     ``` python
+     SECRET_KEY = os.environ.get('SECRET_KEY')
+     ```
+     
+     * Replace current DATABASES Section: <br>
+     ``` python
+     DATABASES = {
+       'default':
+     dj_database_url.parse(os.environ.get('DATABASE_URL'))
+     }
+     ```
+     
+   * Save files and make migrations:
+     * In terminal run:
+     <br> ``` python3 manage.py migrate```
+       
+4. Getting static and media files stored on [Cloudinary](https://cloudinary.com/users/login):
+   * Login in to your Cloudinary account (if you don't have an account create one)
+   * Copy your API enviroment variable from the Cloudinary Dashboard
+   * Add Cloudniary URL to **env.py** file:
+     ```python
+     os.environ['CLOUDINARY_URL'] = 'cloudinary://*************'
+     ```
+   * In **settings.py** add Cloudinary Libraries to installed Apps:
+     ``` python
+     INSTALLED_APPS = [
+     ...,
+     'cloudinary_storage',
+     'django.contrib.staticfiles',
+     'cloudinary',
+     ...,
+     ]
+     ```
+     * Tell Django to use Cloudinary to store media and static files: <br>
+     ``` python
+     STATIC_URL = '/static/'
+
+     STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+     MEDIA_URL = '/media/'
+     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+     ```
+     * Link file to the templates directory: <br>
+     ```python
+     TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+     ```
+     * Change templates directory: <br>
+     ``` python
+     TEMPLATES = [
+     {
+        …,
+        'DIRS': [TEMPLATES_DIR],
+        …,
+          ],
+        },
+       },
+     ]
+     ```
+     * Add Heroku Hostname to ALLOWED_HOSTS:
+       ``` python
+       ALLOWED_HOSTS = ["PROJ_NAME.herokuapp.com", "YOUR_HOSTNAME"]
+       ```
+6. Create a **Procfile** on the top level directory: 
+   * Add following code to Procfile: <br>
+     ``` python
+     web: gunicorn PROJ_NAME.wsgi
+     ```
+7. Save all files, commit and push code to repository:
+   <br> ``` git add . ```
+   <br> ``` git commit -m 'Deployment Commit' ```
+   <br> ``` git push ```
+                
+6. Create the App on [Heroku](https://id.heroku.com/login):
+   * Login in to your Heroku account (if you don't have an account create one)
+   * Click "New" in the top right and select "Create new app"
+   * Enter an App name (must be unique) and select the region closest to you, continue by clicking on "Create app"
+   * Go to the "Settings" tab and scroll down to "Reveal Config Vars"
+   * Add the following KEY's and VALUE's to Config Vars: <br>
+     | KEY                   | VALUE                                                                  |  
+     | ----------------------|:----------------------------------------------------------------------:|
+     | DATABASE_URL          | DATABASE_URL copied from ElephantSQL                                   |
+     | SECRET_KEY            | uniqueSecretKey created in env.py                                      |
+     | CLOUDINARY_URL        | CLOUDINARY_URL (cloudinary://*******) copied from Cloudinary Dashboard |
+     | DISABLE_COLLECTSTATIC | 1                                                                      |
+     | PORT                  | 8000                                                                   |
+
+   * Go to the "Deploy" tab and choose "GitHub" as "Deployment method"
+   * Select the repository that shall be deployed and click "Connect"
+   * Scroll to the end of the page and click "Deploy Branch" to manually deploy through Heroku
+     
+## **Forking The Repository**
+
+## **Cloning The Repository**
+
+## **Credits**
+
+### **Media**
+
+### **Content**
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
