@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Drinks Menu{% endblock %}
+
+<!-- Drink menu items listed in categories -->
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center"> <!-- Centering the entire content -->
+        {% for category in beverage_categories %}
+        <div class="col-md-6">
+            {% if category.name == 'Cafe' %}
+            <div class="text-center"> <!-- Centering Dolci category and its items within its own row -->
+                <h2>{{ category.name }}</h2>
+                <ul class="list-unstyled">
+                    {% for item in category.beverage_items.all %}
+                    <li>{{ item.name }} - €{{ item.price }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% else %}
+            <h2>{{ category.name }}</h2>
+            <ul class="list-unstyled">
+                {% for item in category.beverage_items.all %}
+                <li>{{ item.name }} - €{{ item.price }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
