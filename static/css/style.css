@@ -51,3 +51,36 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* for medium screen sizes from 620px and down */
+@media screen and (max-width: 620px) {
+
+    .navbar-nav .nav-link {
+        font-size: 14px; 
+        padding: 2px;
+    }
+}
+
+/* for small screen sizes from 995px and down */
+@media screen and (max-width: 995px) {
+
+    .navbar-nav .nav-link {
+        font-size: 14px; 
+        padding: 2px;
+    }
+
+    .about {
+        top: 50%;
+        overflow: auto;
+    }
+
+    .about h1 {
+        font-size: 20px;
+        font-weight: 15px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
+
+}
