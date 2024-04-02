@@ -39,3 +39,15 @@ class MenuItems(models.Model):
 
     def __str__(self):
         return self.name
+
+class BeverageCategory(models.Model):
+    """
+    Model for drink categories in menu
+    """
+    name = models.CharField(max_length=50)
+
+    class Meta:
+        verbose_name_plural = 'Beverage Categories'
+
+    def __str__(self):
+        return self.name
