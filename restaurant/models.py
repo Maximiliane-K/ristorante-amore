@@ -13,3 +13,15 @@ class About(models.Model):
 
     def __str__(self):
         return self.title
+
+class Category(models.Model):
+    """
+    Model for menu items categories 
+    """
+    name = models.CharField(max_length=50)
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
+    def __str__(self):
+        return self.name

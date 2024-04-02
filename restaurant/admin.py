@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import About
+from .models import About, Category
 
 # Register your models here.
 class AboutAdmin(admin.ModelAdmin):
@@ -10,6 +10,7 @@ class AboutAdmin(admin.ModelAdmin):
         return not about_instance
 
 admin.site.register(About, AboutAdmin)
+admin.site.register(Category)
 
 
 
