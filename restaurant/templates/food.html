@@ -3,15 +3,29 @@
 
 <!-- Food menu items listed in categories -->
 {% block content %}
-    <ul>
+<div class="container">
+    <div class="row justify-content-center"> <!-- Centering the entire content -->
         {% for category in categories %}
-            <h1>{{ category.name }}</h1>
-            <ul>
-                {% for item in category.menu_items.all %}
+        <div class="col-md-6">
+            {% if category.name == 'Dolci' %}
+            <div class="text-center"> <!-- Centering Dolci category and its items within its own row -->
+                <h2>{{ category.name }}</h2>
+                <ul class="list-unstyled">
+                    {% for item in category.menu_items.all %}
                     <li>{{ item.name }} - €{{ item.price }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% else %}
+            <h2>{{ category.name }}</h2>
+            <ul class="list-unstyled">
+                {% for item in category.menu_items.all %}
+                <li>{{ item.name }} - €{{ item.price }}</li>
                 {% endfor %}
             </ul>
+            {% endif %}
+        </div>
         {% endfor %}
-    </ul>
-
+    </div>
+</div>
 {% endblock %}

@@ -17,9 +17,16 @@ body {
     height: 150px;
 }
 
-/* Footer in base.html*/
+/* footer in base.html*/
 footer {
-    background-color: #FBAFAF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FBAFAF; 
+    height: 50px; 
+    color: #082C16;
+    text-align: center;
 }
 
 .footer {
@@ -44,7 +51,7 @@ footer {
     padding: 5px;
 }
 
-/* About section on homepage*/
+/* about section on homepage*/
 .about {
     position: absolute;
     top: 50%;
@@ -52,12 +59,44 @@ footer {
     transform: translate(-50%, -50%);
 }
 
+/* food menu with categories */
+.container {
+    max-width: 900px;
+    margin: 50px auto; 
+    padding-bottom: 6rem; 
+}
+
+.row {
+    text-align: center;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+
+
+
 /* for medium screen sizes from 620px and down */
 @media screen and (max-width: 620px) {
 
     .navbar-nav .nav-link {
         font-size: 14px; 
         padding: 2px;
+    }
+
+    .category {
+        flex-basis: 100%; /* Full width on smaller screens */
     }
 }
 
