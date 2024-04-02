@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import About, Category, MenuItems, BeverageCategory
+from .models import About, Category, MenuItems, BeverageCategory, BeverageItems
 
 # Register your models here.
 class AboutAdmin(admin.ModelAdmin):
@@ -13,6 +13,7 @@ admin.site.register(About, AboutAdmin)
 admin.site.register(Category)
 admin.site.register(MenuItems)
 admin.site.register(BeverageCategory)
+admin.site.register(BeverageItems)
 
 
 
