@@ -1,0 +1,25 @@
+/* remove default values*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* style for base.html */
+body {
+    font-family: 'Red Hat Display', serif;
+    color: #082C16;
+    background-color: #FFFFFF;
+}
+
+.about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    background-color: #FBAFAF;
+    height: 150px;
+}
