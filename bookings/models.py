@@ -25,7 +25,7 @@ class Booking(models.Model):
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     guest_last_name = models.CharField(max_length=400, default="", null=False)
-    phone_number = models.CharField(max_length=35, default="Please enter your contact number", null=False)
+    phone_number = models.CharField(max_length=20, null=False)
     date = models.DateField(default=datetime.date.today)
     time = models.TimeField(choices=HOURS_CHOICES, default="17:30")
     num_people = models.IntegerField(choices=PAX_CHOICES, null=False, help_text="For reservations of bigger parties please contact us directly.")
@@ -35,7 +35,7 @@ class Booking(models.Model):
 
     def clean_fields(self):
         if self.date < datetime.date.today():
-            raise ValidationError("Please select a date in the future fpr your booking.")
+            raise ValidationError("Please select a date in the future for your booking.")
 
     def __str__(self):
         return f'{self.user.username} - {self.date} {self.time}'
