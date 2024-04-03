@@ -25,7 +25,7 @@ class Booking(models.Model):
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     guest_last_name = models.CharField(max_length=400, default="", null=False)
-    phone_number = models.CharField(max_length=20, default="Please enter your contact number", null=False)
+    phone_number = models.CharField(max_length=35, default="Please enter your contact number", null=False)
     date = models.DateField(default=datetime.date.today)
     time = models.TimeField(choices=HOURS_CHOICES, default="17:30")
     num_people = models.IntegerField(choices=PAX_CHOICES, null=False, help_text="For reservations of bigger parties please contact us directly.")
