@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.core.exceptions import ValidationError
 import datetime
 
 # Create your models here.
@@ -8,17 +7,14 @@ class Booking(models.Model):
     """
     Model for table bookings
     """
-
-    # Restaurant opening hours the guest can choose from
-    HOURS_CHOICES = [
-        ('17:30', '5:30 PM'),
-        ('18:00', '6:00 PM'),
-        ('18:30', '6:30 PM'),
-        ('19:00', '7:00 PM'),
-        ('19:30', '7:30 PM'),
-        ('20:00', '8:00 PM'),
-        ('20:30', '8:30 PM'),
-    ]
+    #Choices for the booking times 
+    TIMES = []
+    for hrs in range(17, 22):  
+        for min in range(0, 60, 30):  
+            if hrs < 21 or (hrs == 21 and min == 0):
+                time_value = datetime.time(hrs, min)
+                time_text = f"{hrs % 12 or 12}:{min:02d} {'AM' if hrs < 12 else 'PM'}"
+                TIMES.append((time_value, time_text))
 
     # Choice for number of guests 
     PAX_CHOICES = [(i, str(i)) for i in range(1, 11)]
@@ -27,15 +23,12 @@ class Booking(models.Model):
     guest_last_name = models.CharField(max_length=400, default="", null=False)
     phone_number = models.CharField(max_length=20, null=False)
     date = models.DateField(default=datetime.date.today)
-    time = models.TimeField(choices=HOURS_CHOICES, default="17:30")
-    num_people = models.IntegerField(choices=PAX_CHOICES, null=False, help_text="For reservations of bigger parties please contact us directly.")
+    time = models.TimeField(choices=TIMES, default=datetime.time(17, 30))
+    num_people = models.IntegerField(choices=PAX_CHOICES, null=False, default=2, help_text="For reservations of bigger parties please contact us directly.")
 
     class Meta:
         ordering = ['date', 'time']
 
-    def clean_fields(self):
-        if self.date < datetime.date.today():
-            raise ValidationError("Please select a date in the future for your booking.")
-
     def __str__(self):
         return f'{self.user.username} - {self.date} {self.time}'
+
