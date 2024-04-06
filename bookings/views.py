@@ -17,5 +17,7 @@ def table_bookings(request):
             return redirect()
     else:
         form = BookingForm()
+    
+    context = {'form': form}
 
-    return render(request, 'bookings/table_booking.html', {'form': form})
+    return render(request, 'bookings/table_booking.html', context)
