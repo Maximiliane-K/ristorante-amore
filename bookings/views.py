@@ -3,6 +3,8 @@ from .models import Booking
 from .forms import BookingForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate, login
 
 
 # Create your views here
@@ -24,6 +26,28 @@ def table_bookings(request):
     context = {'form': form}
 
     return render(request, 'bookings/table_booking.html', context)
+
+
+def register(request):
+    """
+    View for displaying the register form for users to create an account
+    """
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password1']
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('bookings:table_bookings')
+    else:
+        form = UserCreationForm()
+    
+    context = {'form': form}
+
+    return render(request, 'registration/register.html', context)
 
 
 def booking_successful(request):
