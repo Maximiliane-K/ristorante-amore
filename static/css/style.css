@@ -84,11 +84,39 @@ h2 {
     font-size: 24px;
 }
 
+/* styling for table booking form */
+.container {
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
 
+.card {
+    border: 2px solid #FBAFAF; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #FBAFAF;
+    border-color: #FBAFAF;
+    color: #082C16;
+}
 
 
 /* for medium screen sizes from 620px and down */
 @media screen and (max-width: 620px) {
+
+    .navbar-collapse {
+        background-color: #FBAFAF;
+    }
 
     .navbar-nav .nav-link {
         font-size: 14px; 
@@ -96,12 +124,16 @@ h2 {
     }
 
     .category {
-        flex-basis: 100%; /* Full width on smaller screens */
+        flex-basis: 100%;
     }
 }
 
 /* for small screen sizes from 995px and down */
 @media screen and (max-width: 995px) {
+
+    .navbar-collapse {
+        background-color: #FBAFAF;
+    }
 
     .navbar-nav .nav-link {
         font-size: 14px; 
@@ -120,6 +152,10 @@ h2 {
 
     .about p {
         font-size: 15px;
+    }
+
+    .card {
+        margin-top: 20px;
     }
 
 }
