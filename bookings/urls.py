@@ -7,4 +7,5 @@ app_name = 'bookings'
 urlpatterns = [
     path('table_bookings/', views.table_bookings, name='table_bookings'),
     path('accounts/login/', auth_views.LoginView.as_view(), name='login'),
+    path('booking_successful/', views.booking_successful, name='booking_successful'),
 ]
