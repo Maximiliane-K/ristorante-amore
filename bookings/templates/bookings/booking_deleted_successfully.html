@@ -2,8 +2,8 @@
 {% block title %}Booking Deleted Successfully{% endblock %}
 
 {% block content %}
-<div class="booking-deleted-container">
-    <p>Your booking has been successfully deleted.</p>
-    <p><a href="{% url 'bookings:view_bookings' %}">View current bookings</a></p>
+<div class="container booking-deleted-container mt-5">
+    <p class="success-message">Your booking has been successfully deleted!</p>
+    <p><a href="{% url 'bookings:view_bookings' %}" class="custom-link">View Current Bookings</a></p>
 </div>
 {% endblock %}
