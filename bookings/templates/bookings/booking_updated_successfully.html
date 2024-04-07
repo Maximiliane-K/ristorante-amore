@@ -2,10 +2,10 @@
 {% block title %}Booking Updated{% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container booking-updated">
     <div class="alert alert-success" role="alert">
         Booking updated successfully!
     </div>
-    <p><a href="{% url 'bookings:view_bookings' %}">View Bookings</a></p>
+    <p><a class="btn btn-primary" href="{% url 'bookings:view_bookings' %}">View Bookings</a></p>
 </div>
 {% endblock %}
