@@ -5,6 +5,7 @@
     border: 0;
 }
 
+
 /* style for base.html */
 body {
     font-family: 'Red Hat Display', serif;
@@ -16,6 +17,7 @@ body {
     background-color: #FBAFAF;
     height: 150px;
 }
+
 
 /* styling for logo in navbar */
 .logo-container {
@@ -33,6 +35,7 @@ body {
     width: 100%; 
     height: auto; 
   }
+
 
 /* footer in base.html*/
 footer {
@@ -68,6 +71,7 @@ footer {
     padding: 5px;
 }
 
+
 /* about section on homepage*/
 .about {
     position: absolute;
@@ -75,6 +79,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 /* food and drinks menu with categories */
 .container {
@@ -100,6 +105,7 @@ h2 {
     margin-bottom: 15px;
     font-size: 24px;
 }
+
 
 /* styling for table booking, login and register form */
 .container {
@@ -141,6 +147,7 @@ h2 {
     margin-bottom: 10px;
 }
 
+
 /* styling for the logged out successfully page */
 .logout {
     text-align: center;
@@ -157,6 +164,7 @@ p {
     font-size: 18px;
     color: #555
 }
+
 
 /* styling for list of booking items */
 .booking-container {
@@ -194,6 +202,7 @@ p {
 .booking-details strong {
     color: #082C16;
 }
+
 
 /* styling for the edit and delete button */
 .edit-form,
@@ -251,6 +260,55 @@ p {
 }
 
 
+/* styling for booking delete confirmation */
+.confirm-delete-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #FBAFAF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.confirm-delete-container p {
+    font-size: 18px;
+    color: #082C16;
+    margin-bottom: 20px;
+}
+
+.confirm-delete-container button[type="submit"] {
+    background-color: #FBAFAF;
+    color: #082C16;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+}
+
+.confirm-delete-container button[type="submit"]:hover {
+    background-color: #082C16;
+    color: #FBAFAF;
+}
+
+.confirm-delete-container a {
+    background-color: transparent;
+    color: #FBAFAF;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.confirm-delete-container a:hover {
+    background-color: #FBAFAF;
+    color: #082C16;
+}
+
+
 /* for medium screen sizes from 620px and down */
 @media screen and (max-width: 620px) {
 
@@ -284,7 +342,21 @@ p {
         padding: 8px 16px; 
         font-size: 14px; 
     }
+
+    .confirm-delete-container {
+        padding: 15px;
+    }
+
+    .confirm-delete-container p {
+        font-size: 16px;
+    }
+
+    .confirm-delete-container button[type="submit"],
+    .confirm-delete-container a {
+        width: 100%; 
+    }
 }
+
 
 /* for small screen sizes from 995px and down */
 @media screen and (max-width: 995px) {
