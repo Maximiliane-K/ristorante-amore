@@ -120,8 +120,15 @@ def confirm_delete(request, booking_id):
     if request.method == 'POST':
         if 'confirm_delete' in request.POST:
             booking.delete()
-            return redirect('bookings:view_bookings')
+            return redirect('bookings:booking_deleted_successfully')
     
     context = {'booking': booking}
 
     return render(request, 'bookings/confirm_delete.html', context)
+
+
+def booking_deleted_successfully(request):
+    """
+    View for displaying a success message after booking deletion
+    """
+    return render(request, 'bookings/booking_deleted_successfully.html')
