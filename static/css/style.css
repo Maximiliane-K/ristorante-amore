@@ -17,6 +17,23 @@ body {
     height: 150px;
 }
 
+/* styling for logo in navbar */
+.logo-container {
+    width: 140px; 
+    height: 140px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-image {
+    width: 100%; 
+    height: auto; 
+  }
+
 /* footer in base.html*/
 footer {
     position: fixed;
@@ -246,6 +263,12 @@ p {
     .booking-container h1 {
         font-size: 28px;
     }
+
+    .logo-container {
+        width: 80px; 
+        height: 80px;
+      }
 }
+
 
 
