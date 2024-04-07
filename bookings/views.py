@@ -1,10 +1,11 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Booking
 from .forms import BookingForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
+from django.core.exceptions import PermissionDenied
 
 
 # Create your views here
@@ -66,8 +67,35 @@ def logout_page(request):
 
 
 def view_bookings(request):
+    """
+    View for displaying the list of bookings
+    """
     user_bookings = Booking.objects.filter(user=request.user)
     
     context = {'user_bookings': user_bookings}
 
     return render(request, 'bookings/view_bookings.html', context)
+
+
+@login_required
+def edit_booking(request, booking_id):
+    """
+    View for displaying booking form to be able to edit exsisting booking
+    """
+    booking = get_object_or_404(Booking, id=booking_id)
+
+    if request.user != booking.user:  
+        raise PermissionDenied
+
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.instance.status = 0  
+            form.save()
+            return redirect()  
+    else:
+        form = BookingForm(instance=booking)
+
+    context = {'form': form}
+
+    return render(request, 'bookings/table_booking.html', context)
