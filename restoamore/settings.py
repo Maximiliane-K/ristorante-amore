@@ -62,6 +62,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'restoamore.urls'
 
 LOGIN_URL = '/accounts/login/'
+LOGOUT_REDIRECT_URL = '/logout.html'
 
 TEMPLATES = [
     {
