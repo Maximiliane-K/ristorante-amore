@@ -59,3 +59,6 @@ def booking_successful(request):
     context = {'latest_booking': latest_booking}
     
     return render(request, 'bookings/booking_successful.html', context)
+
+def logout_page(request):
+    return render(request, 'registration/logout.html')
