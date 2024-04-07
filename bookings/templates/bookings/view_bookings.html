@@ -16,6 +16,10 @@
                     {% csrf_token %}
                     <button type="submit">Edit Booking</button>
                 </form>
+                <form method="post" action="{% url 'bookings:confirm_delete' booking.id %}" class="delete-form">
+                    {% csrf_token %}
+                    <button type="submit">Delete Booking</button>
+                </form>
             </li>
         {% empty %}
             <li class="no-booking">No bookings found.</li>

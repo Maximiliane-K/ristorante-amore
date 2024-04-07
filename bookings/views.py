@@ -103,3 +103,22 @@ def edit_booking(request, booking_id):
 
 def booking_updated_successfully(request):
     return render(request, 'bookings/booking_updated_successfully.html')
+
+
+def confirm_delete(request, booking_id):
+    """
+    View for confirming that the booking should be deleted
+    """
+    booking = get_object_or_404(Booking, id=booking_id)
+
+    if request.user != booking.user:
+        raise PermissionDenied
+
+    if request.method == 'POST':
+        if 'confirm_delete' in request.POST:
+            booking.delete()
+            return redirect('bookings:view_bookings')
+    
+    context = {'booking': booking}
+
+    return render(request, 'bookings/confirm_delete.html', context)
