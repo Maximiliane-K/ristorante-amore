@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Your Bookings AMORE{% endblock %}
+
+{% block content %}
+
+    <h1>Your Bookings</h1>
+    <ul>
+        {% for booking in user_bookings %}
+            <li>
+                <strong>Date:</strong> {{ booking.date }}<br>
+                <strong>Time:</strong> {{ booking.time }}<br>
+                <strong>Number of People:</strong> {{ booking.num_people }}<br>
+            </li>
+        {% empty %}
+            <li>No bookings found.</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

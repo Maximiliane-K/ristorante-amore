@@ -60,5 +60,14 @@ def booking_successful(request):
     
     return render(request, 'bookings/booking_successful.html', context)
 
+
 def logout_page(request):
     return render(request, 'registration/logout.html')
+
+
+def view_bookings(request):
+    user_bookings = Booking.objects.filter(user=request.user)
+    
+    context = {'user_bookings': user_bookings}
+
+    return render(request, 'bookings/view_bookings.html', context)
