@@ -158,11 +158,13 @@ p {
     color: #555
 }
 
-/* styling for list of bookings */
+/* styling for list of booking items */
 .booking-container {
     max-width: 900px;
     margin: 50px auto;
     padding-bottom: 6rem;
+    overflow-y: auto; 
+    max-height: calc(100vh - 200px); 
 }
 
 .booking-container h1 {
@@ -177,6 +179,9 @@ p {
 }
 
 .booking-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
     margin-bottom: 20px;
     padding: 15px;
     border: 2px solid #FBAFAF;
@@ -185,16 +190,26 @@ p {
     background-color: #FFFFFF;
 }
 
-.booking-item strong {
+.booking-details strong {
     color: #082C16;
 }
 
-.no-booking {
-    padding: 15px;
-    border: 2px solid #FBAFAF;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #FFFFFF;
+.edit-form {
+    margin-left: 15px; 
+}
+
+.edit-form button[type="submit"] {
+    background-color: #FBAFAF;
+    border-color: #FBAFAF;
+    color: #082C16;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-form button[type="submit"]:hover {
+    background-color: #082C16;
     color: #FBAFAF;
 }
 
@@ -214,8 +229,12 @@ p {
     .category {
         flex-basis: 100%;
     }
-}
 
+    .edit-form button[type="submit"] {
+        padding: 8px 16px; 
+        font-size: 14px; 
+    }
+}
 
 /* for small screen sizes from 995px and down */
 @media screen and (max-width: 995px) {
