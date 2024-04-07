@@ -102,6 +102,9 @@ def edit_booking(request, booking_id):
 
 
 def booking_updated_successfully(request):
+    """
+    View for displaying success message after booking was successfully updated
+    """
     return render(request, 'bookings/booking_updated_successfully.html')
 
 
