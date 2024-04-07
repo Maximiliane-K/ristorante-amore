@@ -12,7 +12,7 @@
                     <strong>Time:</strong> {{ booking.time }}<br>
                     <strong>Number of People:</strong> {{ booking.num_people }}<br>
                 </div>
-                <form method="post" action="#" class="edit-form">
+                <form method="post" action="{% url 'bookings:edit_booking' booking.id %}" class="edit-form">
                     {% csrf_token %}
                     <button type="submit">Edit Booking</button>
                 </form>
