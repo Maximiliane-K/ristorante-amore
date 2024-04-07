@@ -84,10 +84,10 @@ h2 {
     font-size: 24px;
 }
 
-/* styling for table booking form */
+/* styling for table booking, login and register form */
 .container {
     padding-top: 50px; 
-    padding-bottom: 50px; 
+    padding-bottom: 150px; 
 }
 
 .card {
@@ -108,6 +108,20 @@ h2 {
     background-color: #FBAFAF;
     border-color: #FBAFAF;
     color: #082C16;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* additional styling for the register form*/
+#id_username, #id_password1, #id_password2 {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 
@@ -127,6 +141,7 @@ h2 {
         flex-basis: 100%;
     }
 }
+
 
 /* for small screen sizes from 995px and down */
 @media screen and (max-width: 995px) {
