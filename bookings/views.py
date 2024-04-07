@@ -92,10 +92,14 @@ def edit_booking(request, booking_id):
         if form.is_valid():
             form.instance.status = 0  
             form.save()
-            return redirect()  
+            return redirect('bookings:booking_updated_successfully')  
     else:
         form = BookingForm(instance=booking)
 
     context = {'form': form}
 
     return render(request, 'bookings/table_booking.html', context)
+
+
+def booking_updated_successfully(request):
+    return render(request, 'bookings/booking_updated_successfully.html')
