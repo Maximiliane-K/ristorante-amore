@@ -56,7 +56,7 @@
           {% else %}
             <li class="nav-item"><a class="nav-link" aria-current="page" href="{% url 'restaurant:food' %}">EAT</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="{% url 'restaurant:drinks' %}">DRINK</a></li>
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="{% url 'restaurant:contact' %}">CONTACT</a></li>
             <li class="nav-item bg-light-subtle rounded"><a class="nav-link active btn" aria-current="page" href="{% url 'bookings:table_bookings' %}">BOOK A TABLE</a></li>
           {% endif %}
         </ul>
