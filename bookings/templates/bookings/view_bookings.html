@@ -25,5 +25,8 @@
             <li class="no-booking">No bookings found.</li>
         {% endfor %}
     </ul>
+    <div class="add-booking-link">
+        <a href="{% url 'bookings:table_bookings' %}">Add new Table Booking</a>
+    </div>
 </div>
 {% endblock %}

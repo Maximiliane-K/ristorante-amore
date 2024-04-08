@@ -276,6 +276,29 @@ p {
     color: #FBAFAF;
 }
 
+/* styling for add booking button */
+.add-booking-link {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-booking-link a {
+    background-color: #FBAFAF;
+    border-color: #FBAFAF;
+    color: #082C16;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.add-booking-link a:hover {
+    background-color: #082C16;
+    color: #FBAFAF;
+}
+
 
 /* styling for booking successfully updated page */
 .booking-updated {
@@ -433,6 +456,15 @@ p {
     .confirm-delete-container button[type="submit"],
     .confirm-delete-container a {
         width: 100%; 
+    }
+
+    .add-booking-link {
+        margin-top: 20px; 
+    }
+
+    .add-booking-link a {
+        padding: 8px 16px; 
+        font-size: 14px; 
     }
 }
 
