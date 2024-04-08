@@ -109,7 +109,12 @@ footer {
 }
 
 
-/* food and drinks menu with categories */
+/* styling used for the card design */
+.container {
+    padding-top: 30px; 
+    padding-bottom: 12rem; 
+}
+
 .menu-card {
     display: flex;
     flex-direction: column;
@@ -117,7 +122,7 @@ footer {
     align-items: center;
     text-align: center;
     padding: 20px;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     border: 4px solid #082C16;
     background-color: rgba(250, 175, 175, 0.9);
@@ -130,16 +135,18 @@ footer {
     margin-bottom: 15px;
 }
 
+.category {
+    margin-bottom: 20px;
+}
+
+
+/* food and drinks menu with categories */
 .menu-list {
     color: #082C16;
     font-size: 15px;
     font-weight: bold;
     line-height: 1.6;
     list-style: none;
-}
-
-.category {
-    margin-bottom: 20px;
 }
 
 .category h3 {
@@ -155,58 +162,28 @@ footer {
 
 
 /* styling for contact page */
-.section-title {
-    color: #FBAFAF;
-    font-size: 36px;
-    margin-bottom: 30px;
-    text-align: center;
+.contact-details h3 {
+    color: #DE0000; 
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
 }
 
-.card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-body {
-    padding: 20px;
-}
-
-.card-body h4 {
-    color: #FBAFAF;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.card-body p {
-    color: #082C16;
-    font-size: 16px;
+.contact-details p {
+    color: #082C16; 
+    font-size: 15px;
+    font-weight: bold;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 .google-map {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 56.25%; 
-    height: 0;
-}
-
-.google-map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+    margin-top: 20px;
+    border: 3px solid #DE0000; 
 }
 
 
 /* styling for table booking, login and register form */
-.container {
-    padding-top: 50px; 
-    padding-bottom: 150px; 
-}
-
 .card {
     border: 2px solid #FBAFAF; 
     border-radius: 10px; 
@@ -545,6 +522,11 @@ p {
         padding: 2px;
     }
 
+    .logo-container {
+        width: 80px; 
+        height: 80px;
+      }
+
     .about {
         top: 50%;
         overflow: auto;
@@ -561,10 +543,6 @@ p {
 
     .menu-list {
         font-size: 12px;
-    }
-
-    .card {
-        margin-top: 20px;
     }
 
     /* media queries for logout.html h1 and p */
@@ -584,11 +562,6 @@ p {
         font-size: 28px;
     }
 
-    .logo-container {
-        width: 80px; 
-        height: 80px;
-      }
-    
     .booking-updated {
         margin-top: 30px;
     }
@@ -613,10 +586,6 @@ p {
 
     .section-title {
         font-size: 28px;
-    }
-
-    .card {
-        margin-top: 10px;
     }
 
     .card-body h4 {
