@@ -6,7 +6,7 @@ def about_view(request):
     """
     View to display about content on landing page
     """
-    about_content = About.objects.all().first()
+    about_content = About.objects.first()
 
     context = {'about_content': about_content}
 
