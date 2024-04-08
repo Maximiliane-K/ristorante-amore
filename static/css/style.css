@@ -107,6 +107,53 @@ h2 {
 }
 
 
+/* styling for contact page */
+.section-title {
+    color: #FBAFAF;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h4 {
+    color: #FBAFAF;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    color: #082C16;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.google-map {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
 /* styling for table booking, login and register form */
 .container {
     padding-top: 50px; 
@@ -462,6 +509,26 @@ p {
 
     .booking-deleted-container {
         max-width: 90%; 
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+
+    .card-body h4 {
+        font-size: 20px;
+    }
+
+    .card-body p {
+        font-size: 14px; 
+    }
+
+    .row>* {
+        margin-bottom: 25px;
     }
 }
 
