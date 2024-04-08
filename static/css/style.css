@@ -118,11 +118,11 @@ footer {
     max-width: 500px;
     margin: 0 auto;
     border: 4px solid #082C16;
-    background-color: rgba(250, 175, 175, 0.8);
+    background-color: rgba(250, 175, 175, 0.9);
 }
 
 .menu-card-title {
-    color: #DE0000;
+    color: #082C16;
     font-weight: bolder;
     font-size: 35px;
     margin-bottom: 15px;
@@ -136,17 +136,18 @@ footer {
     list-style: none;
 }
 
-.food-category {
+.category {
     margin-bottom: 20px;
 }
 
-.food-category h3 {
+.category h3 {
+    color: #DE0000;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.food-category-items li {
+.category-items li {
     margin-bottom: 10px;
 }
 

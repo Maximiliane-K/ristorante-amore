@@ -1,31 +1,29 @@
 {% extends "base.html" %}
 {% block title %}Drinks Menu{% endblock %}
 
-<!-- Drink menu items listed in categories -->
+<!-- Drinks menu items listed in one big card -->
 {% block content %}
-<div class="container">
-    <div class="row justify-content-center"> <!-- Centering the entire content -->
-        {% for category in beverage_categories %}
-        <div class="col-md-6">
-            {% if category.name == 'Cafe' %}
-            <div class="text-center"> <!-- Centering Dolci category and its items within its own row -->
-                <h2>{{ category.name }}</h2>
-                <ul class="list-unstyled">
-                    {% for item in category.beverage_items.all %}
-                    <li>{{ item.name }} - €{{ item.price }}</li>
-                    {% endfor %}
-                </ul>
+<div class="-menu container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="menu-card">
+                <div class="menu-card-body">
+                    <h2 class="menu-card-title text-center mb-4">Drinks</h2>
+                    <ul class="menu-list list-unstyled">
+                        {% for category in beverage_categories %}
+                        <li class="category">
+                            <h3>{{ category.name }}</h3>
+                            <ul class="category-items list-unstyled">
+                                {% for item in category.beverage_items.all %}
+                                <li>{{ item.name }} - €{{ item.price }}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
-            {% else %}
-            <h2>{{ category.name }}</h2>
-            <ul class="list-unstyled">
-                {% for item in category.beverage_items.all %}
-                <li>{{ item.name }} - €{{ item.price }}</li>
-                {% endfor %}
-            </ul>
-            {% endif %}
         </div>
-        {% endfor %}
     </div>
 </div>
 {% endblock %}
