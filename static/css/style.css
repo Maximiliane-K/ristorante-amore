@@ -541,7 +541,7 @@ p {
         font-size: 15px;
     }
 
-    .menu-list {
+    .menu-list, .contact-details p {
         font-size: 12px;
     }
 
