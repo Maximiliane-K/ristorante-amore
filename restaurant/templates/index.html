@@ -3,9 +3,10 @@
 
 <!-- About section on landing page -->
 {% block content %}
-    <div class="about container text-center">
-        <h1>{{ about_content.title }}</h1>
-        <p>{{ about_content.content }}</p>
+    <div class="about-container">
+        <div class="about-card">
+            <h1 class="about-title">{{ about_content.title }}</h1>
+            <p class="about-content">{{ about_content.content }}</p>
+        </div>
     </div>
-
 {% endblock %}
