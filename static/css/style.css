@@ -356,8 +356,8 @@ input, #id_time, #id_num_people {
 }
 
 .confirm-delete-container button[type="submit"]:hover {
-    background-color: #FFFFFF;
-    color: #DE0000;
+    background-color: #082C16;
+    color: #FBAFAF;
 }
 
 .confirm-delete-container a {
