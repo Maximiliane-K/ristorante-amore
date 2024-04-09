@@ -232,6 +232,17 @@ label {
     margin-bottom: 10px;
 }
 
+/* styling for table booking form */
+input,#id_time, #id_num_people {
+    width: 100%;
+    padding: 2px;
+    font-size: 18px;
+    border: 3px solid #082C16;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+
 /* styling for the logged out successfully page */
 .logout {
     text-align: center;
