@@ -252,22 +252,9 @@ input, #id_time, #id_num_people {
 
 /* styling for list of booking items */
 .booking-container {
-    max-width: 900px;
-    margin: 50px auto;
+    max-width: 700px;
+    margin: 25px auto;
     padding-bottom: 6rem;
-    overflow-y: auto; 
-    max-height: calc(100vh - 200px); 
-}
-
-.booking-container h1 {
-    color: #FBAFAF;
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.booking-list {
-    padding-left: 0;
-    list-style: none;
 }
 
 .booking-item {
@@ -275,30 +262,28 @@ input, #id_time, #id_num_people {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
-    padding: 15px;
-    border: 2px solid #FBAFAF;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #FFFFFF;
-    position: relative; 
+    padding: 10px;
+    border: 2px solid #082C16;
+    background-color: rgba(250, 175, 175, 0.9);
 }
 
-.booking-details strong {
-    color: #082C16;
-}
-
-/* styling for the edit and delete button */
 .edit-form,
 .delete-form {
-    display: flex; 
-    align-items: center; 
+    border-color: #082C16;
+    color: #DE0000;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
 }
 
+/* styling for edit and delete booking buttons */
 .edit-form button[type="submit"],
 .delete-form button[type="submit"] {
-    background-color: #FBAFAF;
-    border-color: #FBAFAF;
-    color: #082C16;
+    background-color: #FFFFFF;
+    border: 2px solid #082C16;
+    color: #DE0000;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
@@ -320,9 +305,9 @@ input, #id_time, #id_num_people {
 }
 
 .add-booking-link a {
-    background-color: #FBAFAF;
-    border-color: #FBAFAF;
-    color: #082C16;
+    background-color: #FFFFFF;
+    border: 3px solid #082C16;
+    color: #DE0000;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
@@ -470,6 +455,32 @@ input, #id_time, #id_num_people {
 
     .about-content {
         font-size: 10px;
+    }
+
+    .booking-item {
+        flex-direction: column; 
+    }
+
+    .booking-list {
+        margin-right: 2rem;
+    }
+
+    .edit-form,
+    .delete-form {
+        margin-top: 5px; 
+    }
+
+    .booking-details {
+        font-size: 13px;
+        margin-bottom: 10px; 
+    }
+
+    .edit-form button[type="submit"],
+    .delete-form button[type="submit"] {
+        font-size: 13px;
+        display: block; 
+        width: 100%; 
+        margin-right: 0; 
     }
 }
 
