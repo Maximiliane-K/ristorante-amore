@@ -261,7 +261,7 @@ input, #id_time, #id_num_people {
     padding-bottom: 6rem;
 }
 
-.booking-item {
+.booking-item, .no-booking {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -410,6 +410,35 @@ input, #id_time, #id_num_people {
     color: #FBAFAF;
 }
 
+/* styling for logout message page */
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.logout {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(250, 175, 175, 0.9); 
+    border: 3px solid #082C16; 
+    width: 90%;
+}
+
+.logout h1 {
+    color: #DE0000; 
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.logout p {
+    color: #082C16; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /* for small screen sizes from 620px and down */
 @media screen and (max-width: 620px) {
 
@@ -438,6 +467,18 @@ input, #id_time, #id_num_people {
     .view-booking-link {
         padding: 5px 10px;
         font-size: 13px;
+    }
+
+    .logout {
+        padding: 20px;
+    }
+
+    .logout h1 {
+        font-size: 25px;
+    }
+
+    .logout p {
+        font-size: 16px;
     }
 }
 
