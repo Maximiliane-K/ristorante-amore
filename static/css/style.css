@@ -183,13 +183,22 @@ footer {
 
 /* styling for table booking, login and register form */
 .card {
-    border: 2px solid #FBAFAF; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 4px solid #082C16;
+    background-color: rgba(250, 175, 175, 0.9); 
 }
 
-.card-body {
-    padding: 2rem;
+label {
+    font-size: 15px;
+    color: #DE0000;
+    font-weight: bold;
 }
 
 .form-control {
@@ -197,22 +206,29 @@ footer {
 }
 
 .btn-primary {
-    background-color: #FBAFAF;
-    border-color: #FBAFAF;
-    color: #082C16;
+    background-color: #FFFFFF;
+    border-color: #082C16;
+    color: #DE0000;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 7px;
     cursor: pointer;
 }
 
-/* additional styling for the register form*/
-#id_username, #id_password1, #id_password2 {
+.btn:hover {
+    background-color: #082C16;
+    color: #FBAFAF;
+    border-radius: 7px;
+    border-color: #DE0000;
+}
+
+#id_username, #id_password, #id_password1, #id_password2 {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    border: 3px solid #082C16;
+    border-radius: 15px;
     margin-bottom: 10px;
 }
 
@@ -223,8 +239,9 @@ footer {
 }
 
 p {
-    font-size: 18px;
-    color: #555
+    font-size: 15px;
+    color: #555;
+    padding: 5px;
 }
 
 /* styling for list of booking items */
