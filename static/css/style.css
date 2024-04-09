@@ -5,7 +5,6 @@
     border: 0;
 }
 
-
 /* style for base.html */
 body {
     font-family: 'Red Hat Display', serif;
@@ -21,7 +20,6 @@ body {
     background-color: #FBAFAF;
     height: 150px;
 }
-
 
 /* styling for logo in navbar */
 .logo-container {
@@ -39,7 +37,6 @@ body {
     width: 100%; 
     height: auto; 
   }
-
 
 /* footer in base.html*/
 footer {
@@ -75,46 +72,41 @@ footer {
     padding: 5px;
 }
 
-
-/* about section on landing page */
-.about-container {
-    padding: 120px 20px;
-    text-align: center;
+/* styling used for the container of home, eat, drink, contact */
+.container {
+    padding-top: 30px; 
+    padding-bottom: 12rem; 
 }
 
+/* about section on landing page */
 .about-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    max-width: 500px;
+    padding: 80px;
+    max-width: 600px;
     margin: 0 auto;
-    border: 4px solid #DE0000;
+    border: 4px solid #082C16;
     background-color: rgba(250, 175, 175, 0.9);
 }
 
-.about-title {
-    color: #DE0000; 
-    font-weight: bolder;
-    font-size: 35px;
-    margin-bottom: 15px;
-}
-
 .about-content {
-    color: #082C16; 
+    color: #082C16;
+    font-size: 15px;
     font-weight: bold;
     line-height: 1.6;
 }
 
-
-/* styling used for the card design */
-.container {
-    padding-top: 30px; 
-    padding-bottom: 12rem; 
+.about-title {
+    color: #DE0000;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-bottom: 15px; 
 }
 
+/* styling used for the card design on food and drink menu */
 .menu-card {
     display: flex;
     flex-direction: column;
@@ -139,7 +131,6 @@ footer {
     margin-bottom: 20px;
 }
 
-
 /* food and drinks menu with categories */
 .menu-list {
     color: #082C16;
@@ -159,7 +150,6 @@ footer {
 .category-items li {
     margin-bottom: 10px;
 }
-
 
 /* styling for contact page */
 .contact-details h3 {
@@ -181,7 +171,6 @@ footer {
     margin-top: 20px;
     border: 3px solid #DE0000; 
 }
-
 
 /* styling for table booking, login and register form */
 .card {
@@ -218,24 +207,16 @@ footer {
     margin-bottom: 10px;
 }
 
-
 /* styling for the logged out successfully page */
 .logout {
     text-align: center;
     margin-top: 100px; 
 }
 
-h1 {
-    color: #FBAFAF;
-    font-size: 36px;
-    margin-bottom: 10px; 
-}
-
 p {
     font-size: 18px;
     color: #555
 }
-
 
 /* styling for list of booking items */
 .booking-container {
@@ -273,7 +254,6 @@ p {
 .booking-details strong {
     color: #082C16;
 }
-
 
 /* styling for the edit and delete button */
 .edit-form,
@@ -323,7 +303,6 @@ p {
     color: #FBAFAF;
 }
 
-
 /* styling for booking successfully updated page */
 .booking-updated {
     margin-top: 50px;
@@ -352,7 +331,6 @@ p {
     background-color: #082C16;
     color: #FBAFAF;
 }
-
 
 /* styling for booking delete confirmation */
 .confirm-delete-container {
@@ -402,7 +380,6 @@ p {
     color: #082C16;
 }
 
-
 /* styling for success page after booking deletion*/
 .booking-deleted-container {
     text-align: center;
@@ -434,8 +411,7 @@ p {
     color: #FBAFAF;
 }
 
-
-/* for medium screen sizes from 620px and down */
+/* for small screen sizes from 620px and down */
 @media screen and (max-width: 620px) {
 
     .navbar-collapse {
@@ -445,27 +421,6 @@ p {
     .navbar-nav .nav-link {
         font-size: 14px; 
         padding: 2px;
-    }
-
-    .about-container {
-        max-width: 90%;
-        margin: 50px auto;
-        padding: 0px;
-        padding-bottom: 120px;
-    }
-
-    .about-card {
-        padding: 15px; 
-        max-width: 90%; 
-        margin: 0 auto;
-    }
-
-    .about-title {
-        font-size: 20px;
-    }
-
-    .about-content {
-        font-size: 14px;
     }
 
     .booking-container h1 {
@@ -509,8 +464,24 @@ p {
     }
 }
 
+/* for medium screen sizes from 780px and down */
+@media screen and (max-width: 780px){
+    .about-card {
+        padding: 60px;
+        max-width: 500px;
+    }
 
-/* for small screen sizes from 995px and down */
+    .about-title {
+        font-size: 15px;
+        margin-bottom: 10px; 
+    }
+
+    .about-content {
+        font-size: 10px;
+    }
+}
+
+/* for screen sizes from 995px and down */
 @media screen and (max-width: 995px) {
 
     .navbar-collapse {
@@ -526,20 +497,6 @@ p {
         width: 80px; 
         height: 80px;
       }
-
-    .about {
-        top: 50%;
-        overflow: auto;
-    }
-
-    .about h1 {
-        font-size: 20px;
-        font-weight: 15px;
-    }
-
-    .about p {
-        font-size: 15px;
-    }
 
     .menu-list, .contact-details p {
         font-size: 12px;
