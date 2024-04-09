@@ -21,6 +21,15 @@ body {
     height: 130px;
 }
 
+.nav-link {
+    color: #DE0000;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+    color: #DE0000;
+}
+
 /* styling for logo in navbar */
 .logo-container {
     width: 125px; 
