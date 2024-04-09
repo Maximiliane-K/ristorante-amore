@@ -50,6 +50,12 @@ def register(request):
 
     return render(request, 'registration/register.html', context)
 
+def redirect_registered_user(request):
+    """
+    View for displaying table booking form after user registered
+    """
+    return render(request, 'bookings/table_booking.html')
+
 
 def booking_successful(request):
     """
