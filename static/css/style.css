@@ -233,7 +233,7 @@ label {
 }
 
 /* styling for table booking form */
-input,#id_time, #id_num_people {
+input, #id_time, #id_num_people {
     width: 100%;
     padding: 2px;
     font-size: 18px;
@@ -242,17 +242,12 @@ input,#id_time, #id_num_people {
     margin-bottom: 10px;
 }
 
-
-/* styling for the logged out successfully page */
-.logout {
-    text-align: center;
-    margin-top: 100px; 
-}
-
-p {
-    font-size: 15px;
-    color: #555;
-    padding: 5px;
+/* styling for booking successfull page */
+.card-title {
+    color: #DE0000;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 15px; 
 }
 
 /* styling for list of booking items */
@@ -459,46 +454,6 @@ p {
         font-size: 14px; 
         padding: 2px;
     }
-
-    .booking-container h1 {
-        font-size: 24px; 
-    }
-
-    .booking-item {
-        padding: 10px; 
-    }
-
-    .booking-details {
-        font-size: 14px; 
-    }
-
-    .edit-form button[type="submit"],
-    .delete-form button[type="submit"] {
-        padding: 8px 16px; 
-        font-size: 14px; 
-    }
-
-    .confirm-delete-container {
-        padding: 15px;
-    }
-
-    .confirm-delete-container p {
-        font-size: 16px;
-    }
-
-    .confirm-delete-container button[type="submit"],
-    .confirm-delete-container a {
-        width: 100%; 
-    }
-
-    .add-booking-link {
-        margin-top: 20px; 
-    }
-
-    .add-booking-link a {
-        padding: 8px 16px; 
-        font-size: 14px; 
-    }
 }
 
 /* for medium screen sizes from 780px and down */
@@ -537,61 +492,6 @@ p {
 
     .menu-list, .contact-details p {
         font-size: 12px;
-    }
-
-    /* media queries for logout.html h1 and p */
-    h1 {
-        font-size: 28px; 
-    }
-    p {
-        font-size: 16px; 
-    }
-
-    .booking-container {
-        padding-top: 30px;
-        padding-bottom: 80px;
-    }
-    
-    .booking-container h1 {
-        font-size: 28px;
-    }
-
-    .booking-updated {
-        margin-top: 30px;
-    }
-
-    .booking-updated a.btn {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    .success-message {
-        font-size: 20px;
-    }
-
-    .custom-link {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    .booking-deleted-container {
-        max-width: 90%; 
-    }
-
-    .section-title {
-        font-size: 28px;
-    }
-
-    .card-body h4 {
-        font-size: 20px;
-    }
-
-    .card-body p {
-        font-size: 14px; 
-    }
-
-    .row>* {
-        margin-bottom: 25px;
     }
 }
 
