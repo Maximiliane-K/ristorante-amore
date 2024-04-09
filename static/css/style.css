@@ -232,6 +232,10 @@ label {
     margin-bottom: 10px;
 }
 
+.errorlist {
+    list-style-type: none;
+}
+
 /* styling for table booking form */
 input, #id_time, #id_num_people {
     width: 100%;
