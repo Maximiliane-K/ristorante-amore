@@ -1,9 +1,9 @@
 # Ristorante AMORE
 
 ## Code Institute Portfolio Project 4
-![Image showing the Ristorante AMORE website on various devices]
+![Image showing the Ristorante AMORE website on various devices](static/images/readme/resto-amore-responsive-overview.png)
 
-View the deployed site: [Ristorante AMORE]
+View the deployed site: [Ristorante AMORE](https://restoamore-97664a64d2b2.herokuapp.com/)
 
 Ristorante AMORE is the imagined restaurant’s website showcasing all the pieces of information a guest would need before visiting. The website will enable the user, the imagined guest, to browse through the menu, look up the contact information, and book a table online. 
 
@@ -128,11 +128,17 @@ The following user requirements and expectations were used to plan the Scope of 
 I created my wireframes using Figma. During production I added further features that aren't displayed in the wireframes. 
 These were created to give guidance when coming to the design. 
 
-*[Home]
-*[Food Menu]
-*[Drinks Menu]
-*[Contact]
-*[Table Booking]
+Homepage wireframes:
+
+![Image showing wireframe of landing page](static/images/readme/resto-amore-homepage-wireframe.png)
+
+Food and drinks menu wireframes:
+
+![Image showing wireframe of food and drinks menu](static/images/readme/resto-amore-menu-wireframe.png)
+
+Contact and calendar wireframes:
+
+![Image showing wireframe of food and drinks menu](static/images/readme/resto-amore-contact-and-booking-wireframe.png)
 
 ### Surface Plane
 
@@ -142,7 +148,12 @@ I wanted my color palatte to reflect the mood of an romantic restaurant in Italy
 With the name of the restaurant being AMORE it was clear to me that red and pink elements should be used. 
 For the darker shades I chose a dark green, that should be reminiscent of basil and the green in the italian flag, and a dark blue that shall depict an not too dark evening sky. 
 
+![Image showing color-palette](static/images/readme/resto-amore-color-palette.png)
+
 #### **Typography**
+As font I opted for Red Hat Display which was obtained from [Google Fonts](https://fonts.google.com/?query=Red+hat+). 
+
+The Red Hat Display was used in different font-seizes and weights throughout the site. The design of clarity and readability made it suitable for conveying information.
 
 ## Features
 
