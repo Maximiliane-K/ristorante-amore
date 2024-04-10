@@ -148,6 +148,8 @@ I wanted my color palatte to reflect the mood of an romantic restaurant in Italy
 With the name of the restaurant being AMORE it was clear to me that red and pink elements should be used. 
 For the darker shades I chose a dark green, that should be reminiscent of basil and the green in the italian flag, and a dark blue that shall depict an not too dark evening sky. 
 
+![Image showing color-palette](static/images/readme/resto-amore-color-palette.png)
+
 #### **Typography**
 
 ## Features
