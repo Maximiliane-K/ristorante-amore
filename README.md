@@ -151,6 +151,9 @@ For the darker shades I chose a dark green, that should be reminiscent of basil 
 ![Image showing color-palette](static/images/readme/resto-amore-color-palette.png)
 
 #### **Typography**
+As font I opted for Red Hat Display which was obtained from [Google Fonts](https://fonts.google.com/?query=Red+hat+). 
+
+The Red Hat Display was used in different font-seizes and weights throughout the site. The design of clarity and readability made it suitable for conveying information.
 
 ## Features
 
