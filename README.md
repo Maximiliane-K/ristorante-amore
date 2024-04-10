@@ -128,11 +128,17 @@ The following user requirements and expectations were used to plan the Scope of 
 I created my wireframes using Figma. During production I added further features that aren't displayed in the wireframes. 
 These were created to give guidance when coming to the design. 
 
-*[Home]
-*[Food Menu]
-*[Drinks Menu]
-*[Contact]
-*[Table Booking]
+Homepage wireframes:
+
+![Image showing wireframe of landing page](static/images/readme/resto-amore-homepage-wireframe.png)
+
+Food and drinks menu wireframes:
+
+![Image showing wireframe of food and drinks menu](static/images/readme/resto-amore-menu-wireframe.png)
+
+Contact and calendar wireframes:
+
+![Image showing wireframe of food and drinks menu](static/images/readme/resto-amore-contact-and-booking-wireframe.png)
 
 ### Surface Plane
 
