@@ -1,9 +1,9 @@
 # Ristorante AMORE
 
 ## Code Institute Portfolio Project 4
-![Image showing the Ristorante AMORE website on various devices]
+![Image showing the Ristorante AMORE website on various devices](static/images/readme/resto-amore-responsive-overview.png)
 
-View the deployed site: [Ristorante AMORE]
+View the deployed site: [Ristorante AMORE](https://restoamore-97664a64d2b2.herokuapp.com/)
 
 Ristorante AMORE is the imagined restaurant’s website showcasing all the pieces of information a guest would need before visiting. The website will enable the user, the imagined guest, to browse through the menu, look up the contact information, and book a table online. 
 
