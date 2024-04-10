@@ -157,15 +157,29 @@ The Red Hat Display was used in different font-seizes and weights throughout the
 
 ## Features
 
-### **Homepage**
+### **Homepage with Navbar**
+The navbar provides easy access to the food and drink menus as well as to the contact page of the restaurant. 
+It also has a highlighted link to the booking form to make it clear to the user where the booking can be made. 
+In the main area of the landing page you can find an about area that introduces the restaurant shortly and shows the opening hours.
 
-### **Food Menu**
+![Image showing homepage](static/images/readme/resto-amore-landing-page.png)
 
-### **Drinks Menu**
+### **Food and Drinks Menu**
+The food and drinks menu are being displayed as static sites. The user can see the food and drinks items that are available at the restaurant as well as the prices.
+For a better overview the items are sorted into categories which are displayed in a different color and size. 
+
+![Image showing food menu](static/images/readme/resto-amore-food-menu.png)
+
+![Image showing drinks menu](static/images/readme/rest-amore-drinks-menu.png)
 
 ### **Contact**
+The contact page is a static page that displays the address, the phone number and the email address of the restaurant. 
+To be able to provide better location information a Google Map was embedded. 
+
+![Image showing color-palette](static/images/readme/rest-amore-contact-page.png)
 
 ### **Login Form**
+
 
 ### **Sign Up Form**
 
