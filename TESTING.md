@@ -57,25 +57,10 @@ Pep8 CI was used to validate python code and the following errors were corrected
 - need new lines at end of file
 
 ## [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
-Lighthouse was used check on performance and accessibility.  In all cases the SEO score was 100 which was achieved after adding meta 'keyword' and 'description' tags to the base.html head section.
-
-| Page         | Screenshot   |
-|--------------|--------------|
-| Homepage               |              |
-| Eat                    |              |
-| Drink                  |              |
-| Contact                |              |
-| Login                  |              |
-| Register               |              |
-| Book table             |              |
-| Booking successful     |              |
-| Booking list           |              |
-| Edit booking           |              |
-| Update successful      |              |
-| Delete booking         |              |
-| Deletion confirmation  |              |
-| Deletion successful    |              |
-| Logout                 |              |
+Lighthouse was used check on performance and accessibility. 
+Overall the scores of the Performance,Accessibility and SEO were 100 and never lower than 95. 
+The only low score was Best Practices with a score of 78. This is due to the "Uses third-party cookies" warning. 
+Since it refers to the use of cookies set by third-party domains on my website and time ran out I didn't address this issue.
 
 # Bugs
 
