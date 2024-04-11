@@ -254,6 +254,10 @@ In the admin area the restaurant manager/ admin has the possibility to add conte
 ![Image showing menu section in admin](static/images/readme/admin-add-menu-item.png)
 
 ## **Future Features**
+For future features the following can be implemented: 
+* A "remember me" option on the Login page to remember users for their next login
+* A link to the contact page in the booking form under the number of people, so the user can easily find the contact details when wanting to reserve a table for bigger parties
+* A tool for the admin to accept or decline reservations that automatically sends out an email with the information to the user
 
 ## **Technologies**
 
@@ -294,6 +298,7 @@ In the admin area the restaurant manager/ admin has the possibility to add conte
 
   
 ## **Testing**
+Please find all information to the testing in the [TESTING.md file](TESTING.md)
 
 ## **Deployment**
 
@@ -433,15 +438,16 @@ The project is currently hosted on Heroku.
    * Select the repository that shall be deployed and click "Connect"
    * Scroll to the end of the page and click "Deploy Branch" to manually deploy through Heroku
      
-## **Forking The Repository**
-
-## **Cloning The Repository**
-
 ## **Credits**
+The following sites were used for getting information:
+* [django documentation Model field reference](https://docs.djangoproject.com/en/5.0/ref/models/fields/#:~:text=choices%20is%20meant%20for%20static,t%20change%20much%2C%20if%20ever.&text=A%20new%20migration%20is%20created,for%20the%20field's%20current%20value.)
+* [django documentation Form fields](https://docs.djangoproject.com/en/5.0/ref/forms/fields/)
+* [django documentation Time zones](https://docs.djangoproject.com/en/5.0/topics/i18n/timezones/)
+* [django documentation Authentication System](https://docs.djangoproject.com/en/5.0/topics/auth/default/#django.contrib.auth.decorators.user_passes_test)
+* [Bootstrap CSS](https://getbootstrap.com/docs/3.4/css/)
 
 ### **Media**
-
-### **Content**
+The background image was taken from [PEXELS](https://www.pexels.com/de-de/foto/leute-die-alkohol-trinken-und-auf-esstisch-nahaufnahmefoto-sprechen-696218/)
 
 
 
