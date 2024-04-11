@@ -62,6 +62,12 @@ Overall the scores of the Performance,Accessibility and SEO were 100 and never l
 The only low score was Best Practices with a score of 78. This is due to the "Uses third-party cookies" warning. 
 Since it refers to the use of cookies set by third-party domains on my website and time ran out I didn't address this issue.
 
+An example of the testing and the error: 
+
+![Image showing lighthouse testing of homepage](static/images/readme/homepage-lighthouse.png)
+
+![Image showing lighthouse testing error](static/images/readme/error-lighthouse.png)
+
 # Bugs
 
 ## Bugs Outstanding
