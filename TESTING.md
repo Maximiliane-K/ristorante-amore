@@ -77,7 +77,12 @@ Lighthouse was used check on performance and accessibility.  In all cases the SE
 | Deletion successful    |              |
 | Logout                 |              |
 
+# Bugs
 
+## Bugs Outstanding
+ At the moment when booking a table in the booking form it is possible to book a table in the past. 
+ Since the contact details of guest are being requested when making a booking as for now the admin/ restaurant manager can contact the guest and inform them about the mistake. 
+ Running out of time I didn't prioritize this issue but will fix it in the future. 
 
 
 
