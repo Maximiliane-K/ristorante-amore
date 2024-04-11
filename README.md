@@ -67,6 +67,7 @@ For the restaurant owner, there will be an administrative area that allows the m
 #### **User Stories**
 
 The User Stories were created and categorized using the prioritization technique of the MoSCoW method. 
+My detailed User Stories can be found [here](https://https://github.com/users/Maximiliane-K/projects/11).
 
 | | As a / an | I want to be able to… | So that I can…  |
 |----|----|----|----|
