@@ -119,7 +119,11 @@ The following user requirements and expectations were used to plan the Scope of 
 
 ### Structure Plane
 
-#### **Database Shema**
+#### **Database Model**
+For the database model I used [Lucidchart](https://www.lucidchart.com/pages/de).
+To help visualize my database, I created a chart which shows the relationships between the models.
+
+![Image showing database model](static/images/readme/resto-amore-database-model.png)
 
 ### Skeleton Plane
 
