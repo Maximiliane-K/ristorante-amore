@@ -48,6 +48,8 @@ In the iframe on the contact page I used percentages for width and height. I cha
 
 The CSS from the static file was directly input to the CSS Validator and no errors were found.
 
+![Image showing W3C validation](static/images/readme/css-validation.png)
+
 ## [Python Validator](https://pep8ci.herokuapp.com/)
 
 Pep8 CI was used to validate python code and the following errors were corrected:
