@@ -162,7 +162,13 @@ The navbar provides easy access to the food and drink menus as well as to the co
 It also has a highlighted link to the booking form to make it clear to the user where the booking can be made. 
 In the main area of the landing page you can find an about area that introduces the restaurant shortly and shows the opening hours.
 
+#### **Footer**
+In the footer of the website you can find the social links and copyright information. 
+
 ![Image showing homepage](static/images/readme/resto-amore-landing-page.png)
+
+### **Footer**
+In the footer of the website you can find the social links and copyright information. 
 
 ### **Food and Drinks Menu**
 The food and drinks menu are being displayed as static sites. The user can see the food and drinks items that are available at the restaurant as well as the prices.
@@ -179,17 +185,57 @@ To be able to provide better location information a Google Map was embedded.
 ![Image showing color-palette](static/images/readme/rest-amore-contact-page.png)
 
 ### **Login Form**
+The login form requiers a username and a password. If the user doesn't have an account yet it will prompt an information that user has to register. 
 
+![Image showing login form](static/images/readme/resto-amore-login.png)
 
-### **Sign Up Form**
+### **Register Form**
+The sign up form or register form requiers the user to enter a username and password as well as confirming the password. 
+Should the user already have an account an information will be prompted that the account alreasy exsists.
+
+![Image showing register form](static/images/readme/resto-amore-register.png)
 
 ### **Booking Form**
+The booking form requiers a last name, phone number, the date and time, as well as the number of people. 
+The date options are being shown in a calendar and the times are predefined based on the opening hours of the restaurant. 
+
+![Image showing register form](static/images/readme/resto-amore-table-booking.png)
+
+After enterening a booking and submitting the form it prompts a "Booking Successful" site that states the date,time and number of people of the successful booking. 
+
+![Image showing booking successful page](static/images/readme/resto-amore-booking-successful.png)
 
 ### **Bookings Overview**
+Under "BOOKINGS" the user can find a list of all his bookings. Each booking displays the booking details and has the option to either be updated/ edited or deleted. 
+The user can also add a new booking in this view since the navigation bar changes for logged in users. 
+
+![Image showing list of bookings](static/images/readme/resto-amore-booking-list.png)
+
+If there is no booking a message will be displayed that states that there are no bookings. 
+
+![Image showing no bookings](static/images/readme/resto-amore-empty-bookings.png)
+
+#### **Edit Booking**
+If the user decides to edit the booking he will be redirected to the booking form. 
+After updating the details of the booking a success page will be displayed with a button that links to the all the listed bookings. 
+
+![Image showing booking updated successfully](static/images/readme/resto-amore-updated-successfully.png)
+
+#### **Delete Bookings**
+If the user decides to delete the booking he will be redirected to a confirmation page that states the booking details of the booking that should be deleted. 
+He either can confirm that the booking should be deleted or exit the deletion process by clicking on "Cancel" which will bring the user back to the list of bookings. 
+
+![Image showing deletion confirmation page](static/images/readme/resto-amore-deletion-confirmation.png)
+
+After clicking on "Yes, delete booking" the user will be redirected to a deletion successful page. 
+There will also be a button that links back to the list of bookings.
+
+![Image showing deletion successfull](static/images/readme/resto-amore-deleted-successful.png)
 
 ### **Logout**
+When logging out the user will see a logged out successful page. 
 
-### **Footer**
+![Image showing logged out successful](static/images/readme/resto-amore-logout.png)
 
 ## **Admin Features**
 
