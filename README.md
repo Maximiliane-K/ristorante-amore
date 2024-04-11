@@ -238,6 +238,20 @@ When logging out the user will see a logged out successful page.
 ![Image showing logged out successful](static/images/readme/resto-amore-logout.png)
 
 ## **Admin Features**
+To get to the admin area please use this link: [Ristorante AMORE Admin](https://restoamore-97664a64d2b2.herokuapp.com/admin/login/?next=/admin/) 
+
+In the admin area the restaurant manager/ admin has the possibility to add content to the website:
+
+* add or change about area with a title and text 
+
+![Image showing about section in admin area](static/images/readme/admin-add-about.png)
+
+* add or change the names of categories of the beverages on the drinks menu 
+* add or change the name and price of a beverage item and select the category it belongs to 
+* add or change the names of categories of the food on the food menu 
+* add or change the name and price of a food item and select the category it belongs to 
+
+![Image showing menu section in admin](static/images/readme/admin-add-menu-item.png)
 
 ## **Future Features**
 
