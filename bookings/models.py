@@ -13,7 +13,8 @@ class Booking(models.Model):
             if hrs < 21 or (hrs == 21 and min == 0):
                 time_value = datetime.time(hrs, min)
                 time_text = (
-                    f"{hrs % 12 or 12}:{min:02d}{'AM' if hrs < 12 else 'PM'}"
+                    f"{hrs % 12 or 12}:{min:02d}"
+                    f"{'AM' if hrs < 12 else 'PM'}"
                 )
                 TIMES.append((time_value, time_text))
 
