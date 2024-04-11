@@ -18,12 +18,12 @@ def table_bookings(request):
         form = BookingForm(request.POST)
         if form.is_valid():
             booking = form.save(commit=False)
-            booking.user = request.user  
+            booking.user = request.user
             booking.save()
             return redirect('bookings:booking_successful')
     else:
         form = BookingForm()
-    
+
     context = {'form': form}
 
     return render(request, 'bookings/table_booking.html', context)
@@ -45,10 +45,11 @@ def register(request):
                 return redirect('bookings:table_bookings')
     else:
         form = UserCreationForm()
-    
+
     context = {'form': form}
 
     return render(request, 'registration/register.html', context)
+
 
 def redirect_registered_user(request):
     """
@@ -61,10 +62,10 @@ def booking_successful(request):
     """
     View for displaying the successful booking page
     """
-    latest_booking = Booking.objects.latest('id')  
+    latest_booking = Booking.objects.latest('id')
 
     context = {'latest_booking': latest_booking}
-    
+
     return render(request, 'bookings/booking_successful.html', context)
 
 
@@ -77,7 +78,7 @@ def view_bookings(request):
     View for displaying the list of bookings
     """
     user_bookings = Booking.objects.filter(user=request.user)
-    
+
     context = {'user_bookings': user_bookings}
 
     return render(request, 'bookings/view_bookings.html', context)
@@ -90,15 +91,15 @@ def edit_booking(request, booking_id):
     """
     booking = get_object_or_404(Booking, id=booking_id)
 
-    if request.user != booking.user:  
+    if request.user != booking.user:
         raise PermissionDenied
 
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
-            form.instance.status = 0  
+            form.instance.status = 0
             form.save()
-            return redirect('bookings:booking_updated_successfully')  
+            return redirect('bookings:booking_updated_successfully')
     else:
         form = BookingForm(instance=booking)
 
@@ -127,7 +128,7 @@ def confirm_delete(request, booking_id):
         if 'confirm_delete' in request.POST:
             booking.delete()
             return redirect('bookings:booking_deleted_successfully')
-    
+
     context = {'booking': booking}
 
     return render(request, 'bookings/confirm_delete.html', context)
