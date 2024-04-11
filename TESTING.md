@@ -35,6 +35,50 @@ To ensure the user stories were implemented properly and operate accordingly the
 
 As of now the user story nr. 15 wasn't implemented since it only was a could have. This can be implemented as a future feature. 
 
+# Validation Testing
+
+## [HTML Validation](https://validator.w3.org/nu/)
+
+Using the deployed Heroku app, each url was run though the W3C HTML Validator successfully. 
+
+The following was corredcted:
+In the iframe on the contact page I used percentages for width and height. I changed this and specified the height and width with numerical values to represent the pixel dimensions.
+
+## [CSS Validation](https://jigsaw.w3.org/css-validator/)
+
+The CSS from the static file was directly input to the CSS Validator and no errors were found.
+
+## [Python Validator](https://pep8ci.herokuapp.com/)
+
+Pep8 CI was used to validate python code and the following errors were corrected:
+
+- blank lines contain whitespace
+- lines too long 
+- need new lines at end of file
+
+## [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+Lighthouse was used check on performance and accessibility.  In all cases the SEO score was 100 which was achieved after adding meta 'keyword' and 'description' tags to the base.html head section.
+
+| Page         | Screenshot   |
+|--------------|--------------|
+| Homepage               |              |
+| Eat                    |              |
+| Drink                  |              |
+| Contact                |              |
+| Login                  |              |
+| Register               |              |
+| Book table             |              |
+| Booking successful     |              |
+| Booking list           |              |
+| Edit booking           |              |
+| Update successful      |              |
+| Delete booking         |              |
+| Deletion confirmation  |              |
+| Deletion successful    |              |
+| Logout                 |              |
+
+
+
 
 
 
